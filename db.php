@@ -1,8 +1,8 @@
 <?php
-require_once('../config.php');
+require_once('../../config.php');
 
 function dbConnect($sql){
-	$mysqli = new mysqli("127.0.0.1", "dev", "B2xWZv2A", "dev");
+	$mysqli = new mysqli($config['hostname'], $config['dbuser'], $config['dbpassword'], $config['dbname']);
 	$utf="set names utf8"; //магия, чтоб работал русский язык
 	$mysqli->query($utf);
 
