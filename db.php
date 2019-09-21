@@ -3,7 +3,7 @@ require_once('../../config.php');
 
 function dbConnect($sql){
 	$mysqli = new mysqli($config['hostname'], $config['dbuser'], $config['dbpassword'], $config['dbname']);
-	$utf="set names utf8"; //магия, чтоб работал русский язык
+	$utf="set names utf8"; //magic for cyrylic charsets
 	$mysqli->query($utf);
 
 	if (!$result = $mysqli->query($sql)) {
