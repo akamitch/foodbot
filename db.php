@@ -1,8 +1,9 @@
 <?php
-$configs = include('config.php');
+
 //config, pwd for mysql test after merge 22222
 
 function dbConnect($sql){
+    $configs = include('config.php');
 	$mysqli = new mysqli($config['hostname'], $config['dbuser'], $config['dbpassword'], $config['dbname']);
 	$utf="set names utf8"; //magic for cyrylic charsets
 	$mysqli->query($utf);
