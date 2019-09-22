@@ -8,5 +8,5 @@ function saveNewUser($telegram_user_id, $first_name, $last_name, $username, $cha
 }
 
 //saveNewUser(123456, "Test Firstnanme", "Test Lastname", "Some Username", 123);
-$configs = parse_ini_file(app.ini);
+$configs = parse_ini_file('app.ini');
 echo $configs[db];
