@@ -1,5 +1,5 @@
 <?php
-require_once('../../config.php');
+require_once('../../foodbot_conf/config.php');
 
 function dbConnect($sql){
 	$mysqli = new mysqli($config['hostname'], $config['dbuser'], $config['dbpassword'], $config['dbname']);
