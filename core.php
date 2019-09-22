@@ -7,4 +7,6 @@ function saveNewUser($telegram_user_id, $first_name, $last_name, $username, $cha
 	dbConnect($sql); //Записываем пользователя в базу
 }
 
-saveNewUser(123456, "Test Firstnanme", "Test Lastname", "Some Username", 123);
+//saveNewUser(123456, "Test Firstnanme", "Test Lastname", "Some Username", 123);
+$configs = parse_ini_file(app.ini);
+echo $configs[db];
