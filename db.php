@@ -1,5 +1,6 @@
 <?php
 $configs = include('config.php');
+//config, pwd for mysql
 
 function dbConnect($sql){
 	$mysqli = new mysqli($config['hostname'], $config['dbuser'], $config['dbpassword'], $config['dbname']);
