@@ -1,6 +1,6 @@
 <?php
 $configs = include('config.php');
-//config, pwd for mysql test after merge
+//config, pwd for mysql test after merge 22222
 
 function dbConnect($sql){
 	$mysqli = new mysqli($config['hostname'], $config['dbuser'], $config['dbpassword'], $config['dbname']);
